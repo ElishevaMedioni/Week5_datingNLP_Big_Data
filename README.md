@@ -1,17 +1,18 @@
 # Week5_datingNLP_Big_Data
 Elisheva Medioni 337628390
+
 Hila Avraham 
 
-### Confusion matrix
-pred    f    m
-   f 2877 2073
-   m 4358 8675
+## Confusion matrix
+#pred    f    m
+#   f 2877 2073
+#   m 4358 8675
    
-### Training times
+## Training times
 Time difference of 27 mins
 
-### list of male words and female words
-male words:
+## list of male words and female words
+### male words:
 1                                            video
 2                                          company
 3                                           sports
@@ -53,7 +54,7 @@ male words:
 39                                               3
 40                                        breaking
 
-women words:
+### women words:
 1                                           loving
 2                                         dancing,
 3                                              dog
