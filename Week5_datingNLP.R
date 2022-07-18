@@ -245,7 +245,7 @@ all.tokens.tfidf <-  apply(all.tokens.df1, 2, tf.idf, idf = all.tokens.idf)
 dim(all.tokens.tfidf)
 View(all.tokens.tfidf[1:25, 1:25])
 
-save(file='Week5_datingNLP.rdata', tree, all.tokens.tfidf)
+#save(file='Week5_datingNLP.rdata', tree, all.tokens.tfidf)
 
 rm(all.tokens.df1)
 rm(all.tokens.idf)
@@ -301,16 +301,16 @@ kmeans_word_2 = kmeans(all.tokens.df.sub, centers = 2, nstart = 50)
 fviz_cluster(kmeans_word_2, data = all.tokens.df.sub)
 
 #k=3
-kmeans_word_3 = kmeans(all.tokens.df, centers = 3, nstart = 50)
-fviz_cluster(kmeans_word, data = all.tokens.df)
+kmeans_word_3 = kmeans(all.tokens.df.sub, centers = 3, nstart = 50)
+fviz_cluster(kmeans_word, data = all.tokens.df.sub)
 
 #k=4
-kmeans_word_4 = kmeans(all.tokens.df, centers = 4, nstart = 50)
-fviz_cluster(kmeans_word, data = all.tokens.df)
+kmeans_word_4 = kmeans(all.tokens.df.sub, centers = 4, nstart = 50)
+fviz_cluster(kmeans_word, data = all.tokens.df.sub)
 
 #k=10
-kmeans_word_10 = kmeans(all.tokens.df, centers = 10, nstart = 50)
-fviz_cluster(kmeans_word, data = all.tokens.df)
+kmeans_word_10 = kmeans(all.tokens.df.sub, centers = 10, nstart = 50)
+fviz_cluster(kmeans_word, data = all.tokens.df.sub)
 
 
 # plot T-SNE or PCA of the cluster results
@@ -320,30 +320,11 @@ tsne_out <- Rtsne(all.tokens.matrix) # Run TSNE
 # Show the objects in the 2D tsne representation
 plot(tsne_out$Y,col=all.tokens.df$Label)
 
-str(all.tokens.df.sub)
 
 pca_word = prcomp(all.tokens.df.sub, center = TRUE, scale = TRUE)
 summary(pca_word)
 
-rm(profiles)
 
 
-# Cluster identification for 
-# each observation
-kmeans.re$cluster
 
-
-drop_female_word<-c("loving","dancing,","dog","hair","laughing",";)","laugh","please"
-                    ,"kids","adventure","family","healthy","explore","hiking","laugh"
-                    ,"men","smile","nature","comfortable","crazy","chocolate","harry"
-                    ,"dating","mad","loved","positive","laughter","modern","sunshine"
-                    ,"active","yoga","fresh","ready","art,","glass","except","loves"
-                    ,"planning","half","strong")
-
-#make a list of male word (these words are in male_words)
-drop_male_word<-c("video","company","sports","internet","computer","star","science","business"
-                  ,"us","couple","bar","here.","started","lost","three","run","become"
-                  ,"beer","now,","less","isn't","south","words","point","stuff.","woman","show"
-                  ,"thought","games,","car","during","self","done","seem","said","daily"
-                  ,"history","years." ,"3","breaking")                   
                     
