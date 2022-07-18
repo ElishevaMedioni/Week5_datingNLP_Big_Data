@@ -4,10 +4,6 @@ Elisheva Medioni 337628390
 Hila Avraham 
 
 ## Confusion matrix
-### pred    f    m
-###   f 2877 2073
-###   m 4358 8675
-
 <img width="135" alt="Capture d’écran 2022-07-18 à 18 31 53" src="https://user-images.githubusercontent.com/73399121/179548608-c245d08c-314f-4d74-bf5f-c01f08356c44.png">
 
 
