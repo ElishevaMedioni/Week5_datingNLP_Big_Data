@@ -3,6 +3,8 @@ Elisheva Medioni 337628390
 
 Hila Avraham 209290246
 
+Ruth Ovadia 212121375
+
 ## Confusion matrix
 <img width="135" alt="Capture d’écran 2022-07-18 à 18 31 53" src="https://user-images.githubusercontent.com/73399121/179548608-c245d08c-314f-4d74-bf5f-c01f08356c44.png">
 
