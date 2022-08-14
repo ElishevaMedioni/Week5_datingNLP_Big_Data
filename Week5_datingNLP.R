@@ -1,5 +1,6 @@
 # Elisheva Medioni 337628390
-# Hila Avraham 
+# Hila Avraham 209290246
+# Ruth Ovadia 212121375
 
 # -- installing packages --
 # install.packages("parallel")
